@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jiwa Tempat — Genius Loci Keraton Yogyakarta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel+Decorative:wght@400;700&family=Noto+Serif+Javanese&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ CURSOR CUSTOM ░░ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ░░ LOADER ░░ -->
+  <div class="loader" id="loader">
+      <div class="loader-inner">
+      <img src="photos/logo-keraton.png" alt="Keraton" class="loader-logo" />
+      <div class="loader-text">Memasuki Ruang Sakral</div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ░░ NOISE OVERLAY ░░ -->
+  <div class="noise-overlay"></div>
+
+  <!-- ═══════════════════════════════════════
+       HERO / OPENING
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <!-- SLOT FOTO HERO — ganti src dengan foto Keraton -->
+      <img src="photos/1.jpg" alt="Keraton Yogyakarta" class="hero-img" id="hero-img" />
+      <div class="hero-vignette"></div>
+      <div class="batik-pattern"></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">꧁ Genius Loci ꧂</div>
+      <ul class="nav-links">
+        <li><a href="#pengantar">Pengantar</a></li>
+        <li><a href="#struktur">Struktur Sosial</a></li>
+        <li><a href="#makna">Makna Ruang</a></li>
+        <li><a href="#pergeseran">Pergeseran</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#penutup">Penutup</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-label reveal-up">Analisis Arsitektur · Christian Norberg-Schulz</div>
+      <h1 class="hero-title reveal-up">
+        <span class="title-line">Jiwa Tempat</span>
+        <em class="title-line">dalam Ruang Sakral</em>
+        <span class="title-line accent">Keraton Yogyakarta</span>
+      </h1>
+      <p class="hero-sub reveal-up">
+        Sebuah kajian <em>Genius Loci</em> — roh yang mendiami, menjaga, dan memberi makna pada setiap sudut keraton yang telah berdiri sejak 1755.
+      </p>
+      <div class="hero-scroll reveal-up">
+        <span>Gulir ke bawah</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+
+    <div class="hero-ornament-left">
+      <svg viewBox="0 0 80 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="40" y1="0" x2="40" y2="400" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4 8"/>
+        <circle cx="40" cy="200" r="8" stroke="currentColor" stroke-width="0.5" fill="none"/>
+        <circle cx="40" cy="200" r="3" fill="currentColor" opacity="0.5"/>
+        <circle cx="40" cy="100" r="4" stroke="currentColor" stroke-width="0.5" fill="none"/>
+        <circle cx="40" cy="300" r="4" stroke="currentColor" stroke-width="0.5" fill="none"/>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       PENGANTAR
+  ═══════════════════════════════════════ -->
+  <section class="section pengantar" id="pengantar">
+    <div class="section-inner">
+      <div class="section-label">01 — Pengantar</div>
+      <div class="two-col">
+        <div class="col-text">
+          <h2 class="section-title reveal-up">Apa itu <em>Genius Loci?</em></h2>
+          <p class="body-text reveal-up">
+            Genius Loci adalah konsep dari arsitek dan teoretisi Norwegia <strong>Christian Norberg-Schulz</strong> (1926–2000) yang merujuk pada "roh sebuah tempat" — kualitas tak kasat mata yang membuat suatu ruang terasa berbeda, bermakna, dan tak terlupakan.
+          </p>
+          <p class="body-text reveal-up">
+            Norberg-Schulz berpendapat bahwa setiap tempat memiliki karakter tersendiri yang dibentuk oleh <em>struktur fisik, aktivitas manusia, dan simbolisme budaya</em>. Tanpa pemahaman ini, arsitektur hanyalah tumpukan batu dan kayu.
+          </p>
+          <blockquote class="pull-quote reveal-up">
+            "To dwell means to live in accordance with the genius loci."
+            <cite>— Christian Norberg-Schulz, <em>Genius Loci: Towards a Phenomenology of Architecture</em>, 1979</cite>
+          </blockquote>
+        </div>
+        <div class="col-visual">
+          <!-- SLOT FOTO — ganti src dengan foto Norberg-Schulz atau diagram -->
+          <div class="photo-frame reveal-up">
+            <img src="photos/christian-norberg-schulz.jpg" alt="Christian Norberg-Schulz" class="section-photo" />
+            <div class="photo-caption">Christian Norberg-Schulz — Fenomenologi Arsitektur</div>
+          </div>
+          <div class="concept-card reveal-up">
+            <div class="concept-item"><span class="concept-icon">◈</span><strong>Space</strong> — Dimensi tiga ruang fisik</div>
+            <div class="concept-item"><span class="concept-icon">◈</span><strong>Character</strong> — Suasana & atmosfer tempat</div>
+            <div class="concept-item"><span class="concept-icon">◈</span><strong>Spirit</strong> — Roh / jiwa yang menghuni</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-number">01</div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       STRUKTUR SOSIAL
+  ═══════════════════════════════════════ -->
+  <section class="section struktur dark-section" id="struktur">
+    <div class="section-inner">
+      <div class="section-label light">02 — Struktur Sosial</div>
+      <h2 class="section-title light reveal-up">Tata Hierarki <em>dalam Ruang Keraton</em></h2>
+
+      <p class="body-text light center reveal-up" style="max-width:680px; margin:0 auto 3rem;">
+        Keraton Yogyakarta bukan sekadar istana. Ia adalah <em>peta kosmologi Jawa</em> yang diwujudkan dalam arsitektur — setiap zona ruang mencerminkan lapisan status sosial dan kedekatan spiritual terhadap pusat kekuasaan.
+      </p>
+
+      <!-- DIAGRAM KONSENTRIS INTERAKTIF -->
+      <p class="diagram-hint reveal-up">✦ Klik setiap lingkaran untuk melihat detail zona</p>
+      <div class="concentric-diagram reveal-up">
+        <div class="ring ring-5" data-label="Kota Yogyakarta"
+             data-title="Kota Yogyakarta"
+             data-desc="Kawasan kota yang mengelilingi kompleks keraton. Tata kota Yogyakarta dirancang menyatu dengan kosmologi keraton — Malioboro sebagai sumbu utara, Pasar Beringharjo sebagai pusat ekonomi rakyat. Seluruh kota adalah perpanjangan dari genius loci keraton."
+             data-photo="photos/kota.jpeg">
+          <div class="ring ring-4" data-label="Baluwarti (Benteng)"
+               data-title="Baluwarti — Benteng Keraton"
+               data-desc="Benteng fisik sekaligus batas simbolis antara dunia keraton dan kota. Di dalamnya terdapat hunian abdi dalem dan prajurit keraton yang mengabdikan hidupnya untuk Sultan. Baluwarti adalah kulit terluar yang melindungi sacrum dari dunia profan."
+               data-photo="photos/benteng.jpg">
+            <div class="ring ring-3" data-label="Kamandhungan"
+                 data-title="Kamandhungan"
+                 data-desc="Zona semi-publik untuk kalangan bangsawan dan pejabat keraton. Berfungsi sebagai ruang administrasi dan pertemuan formal. Hanya mereka yang memiliki hubungan resmi dengan keraton yang dapat memasuki zona ini — pintu gerbang menuju dunia batin keraton."
+                 data-photo="photos/kemandhungan.jpg">
+              <div class="ring ring-2" data-label="Sri Manganti"
+                   data-title="Sri Manganti"
+                   data-desc="Ruang transisi antara publik dan sakral. Digunakan untuk upacara penyambutan tamu agung dan persiapan ritual keraton. Nama 'Sri Manganti' berarti 'yang mulia sedang menunggu' — ruang penantian sebelum memasuki inti spiritual."
+                   data-photo="photos/sri manganti.jpg">
+                <div class="ring ring-1" data-label="Kedhaton (Inti Sakral)"
+                     data-title="Kedhaton — Inti Sakral"
+                     data-desc="Zona paling sakral. Hanya Sultan, kerabat inti, dan abdi dalem tertentu yang boleh masuk. Tempat Singgasana Sri Sultan dan pusaka-pusaka keramat keraton disimpan dan dijaga. Di sinilah konsentrasi tertinggi genius loci Keraton Yogyakarta bersemayam."
+                     data-photo="photos/kedhaton.jpg">
+                  <div class="ring-center"
+                       data-title="Sultan — Pusat Semesta"
+                       data-desc="Sultan bukan sekadar pemimpin politik, melainkan penghubung kosmis yang menjaga harmoni antara manusia, alam, dan kekuatan ilahi. Posisinya tepat di pusat sumbu imajiner Merapi–Keraton–Laut Selatan. Ia adalah titik nol kosmologi Jawa."
+                       data-photo="photos/bangsal-kencana.jpg">
+                    <small>Sultan</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL ZONA -->
+      <div class="zone-modal" id="zone-modal">
+        <div class="zone-modal-backdrop" id="zone-modal-backdrop"></div>
+        <div class="zone-modal-box">
+          <button class="zone-modal-close" id="zone-modal-close">✕</button>
+          <div class="zone-modal-photo-wrap">
+            <img src="" alt="" class="zone-modal-photo" id="zone-modal-photo" />
+            <span class="photo-placeholder" id="zone-modal-placeholder">📷 Foto belum tersedia</span>
+          </div>
+          <div class="zone-modal-body">
+            <div class="zone-modal-label">Zona Keraton</div>
+            <h3 class="zone-modal-title" id="zone-modal-title"></h3>
+            <p class="zone-modal-desc" id="zone-modal-desc"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- KARTU HIERARKI -->
+      <div class="hierarki-grid">
+        <div class="hierarki-card reveal-up" style="--delay:0s">
+          <div class="hcard-num">I</div>
+          <div class="hcard-zone">Kedhaton</div>
+          <div class="hcard-desc">Zona paling sakral. Hanya Sultan, kerabat inti, dan abdi dalem tertentu yang boleh masuk. Tempat Singgasana Sri Sultan berada.</div>
+          <!-- SLOT FOTO -->
+          <div class="hcard-photo"><img src="photos/kedhaton.jpg" alt="Kedhaton" /><span class="photo-placeholder">📷 Foto Kedhaton</span></div>
+        </div>
+        <div class="hierarki-card reveal-up" style="--delay:0.1s">
+          <div class="hcard-num">II</div>
+          <div class="hcard-zone">Sri Manganti</div>
+          <div class="hcard-desc">Ruang transisi antara publik dan sakral. Digunakan untuk upacara penyambutan tamu agung dan persiapan ritual keraton.</div>
+          <div class="hcard-photo"><img src="photos/sri manganti.jpg" alt="Sri Manganti" /><span class="photo-placeholder">📷 Foto Sri Manganti</span></div>
+        </div>
+        <div class="hierarki-card reveal-up" style="--delay:0.2s">
+          <div class="hcard-num">III</div>
+          <div class="hcard-zone">Kamandhungan</div>
+          <div class="hcard-desc">Zona semi-publik untuk kalangan bangsawan dan pejabat keraton. Berfungsi sebagai ruang administrasi dan pertemuan formal.</div>
+          <div class="hcard-photo"><img src="photos/kemandhungan.jpg" alt="Kamandhungan" /><span class="photo-placeholder">📷 Foto Kamandhungan</span></div>
+        </div>
+        <div class="hierarki-card reveal-up" style="--delay:0.3s">
+          <div class="hcard-num">IV</div>
+          <div class="hcard-zone">Baluwarti</div>
+          <div class="hcard-desc">Kawasan pemukiman abdi dalem dan prajurit keraton. Benteng fisik sekaligus batas simbolis antara dunia keraton dan kota.</div>
+          <div class="hcard-photo"><img src="photos/benteng.jpg" alt="Baluwarti" /><span class="photo-placeholder">📷 Foto Baluwarti</span></div>
+        </div>
+      </div>
+
+      <!-- FOTO BESAR STRUKTUR -->
+      <div class="wide-photo-wrap reveal-up">
+        <img src="photos/denah yogyakarta.jpg" alt="Denah Keraton Yogyakarta" class="wide-photo" />
+        <div class="wide-photo-caption">Denah Keraton Yogyakarta — Susunan zona konsentris mencerminkan kosmologi Jawa (ganti dengan foto/denah asli)</div>
+      </div>
+    </div>
+    <div class="section-number light">02</div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       MAKNA RUANG
+  ═══════════════════════════════════════ -->
+  <section class="section makna" id="makna">
+    <div class="section-inner">
+      <div class="section-label">03 — Makna Ruang</div>
+      <h2 class="section-title reveal-up">Simbolisme & <em>Semesta dalam Batu</em></h2>
+
+      <!-- AXIS MUNDI -->
+<div class="axis-section-new reveal-up">
+  <div class="axis-container">
+
+    <!-- SATU FOTO SUMBU -->
+    <div class="axis-photo-wrap single">
+      <img src="photos/sumbu imajiner.png" alt="Sumbu Imajiner Keraton" />
+      <span class="photo-placeholder">📷 Foto Sumbu Imajiner</span>
+      <div class="axis-photo-overlay">
+        <div class="axis-overlay-top">
+        </div>
+        <div class="axis-overlay-center">
+        </div>
+        <div class="axis-overlay-bottom">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TEKS KANAN -->
+  <div class="axis-text">
+    <h3>Sumbu Imajiner: <em>Merapi–Keraton–Laut Selatan</em></h3>
+    <p class="body-text">
+      Norberg-Schulz menyebut sumbu vertikal ini sebagai manifestasi paling jelas dari <em>genius loci</em>. Keraton dibangun tepat di garis imajiner antara Gunung Merapi di utara dan Pantai Parangtritis di selatan — simbol keseimbangan kosmik antara api dan air, langit dan bumi.
+    </p>
+    <p class="body-text">
+      Sultan bukan sekadar pemimpin politik, melainkan <em>penghubung kosmis</em> yang menjaga harmoni antara manusia, alam, dan kekuatan ilahi.
+    </p>
+  </div>
+</div>
+
+      <!-- GRID ELEMEN ARSITEKTUR -->
+      <div class="arsitek-grid">
+        <div class="arsitek-item reveal-up" style="--delay:0s">
+          <div class="arsitek-photo">
+            <img src="photos/pendopo.jpg" alt="Pendopo Agung" />
+            <span class="photo-placeholder">📷 Pendopo Agung</span>
+          </div>
+          <div class="arsitek-info">
+            <h4>Pendopo Agung</h4>
+            <p>Ruang terbuka beratap joglo tanpa dinding — simbol keterbukaan sultan terhadap rakyat. Atap berbentuk gunung meru sebagai penghubung antara bumi dan langit.</p>
+            <div class="arsitek-tag">Ruang Publik · Sakral</div>
+          </div>
+        </div>
+
+        <div class="arsitek-item reveal-up" style="--delay:0.15s">
+          <div class="arsitek-photo">
+            <img src="photos/bangsal-kencana.jpg" alt="Bangsal Kencana" />
+            <span class="photo-placeholder">📷 Bangsal Kencana</span>
+          </div>
+          <div class="arsitek-info">
+            <h4>Bangsal Kencana</h4>
+            <p>Singgasana utama Sultan, dihiasi ukiran emas dan motif batik sakral. Posisinya tepat di pusat sumbu imajiner keraton — titik nol alam semesta Jawa.</p>
+            <div class="arsitek-tag">Pusat Kekuasaan · Kosmologi</div>
+          </div>
+        </div>
+
+        <div class="arsitek-item reveal-up" style="--delay:0.3s">
+          <div class="arsitek-photo">
+            <img src="photos/sitihinggil.jpg" alt="Sitihinggil" />
+            <span class="photo-placeholder">📷 Sitihinggil</span>
+          </div>
+          <div class="arsitek-info">
+            <h4>Sitihinggil</h4>
+            <p><em>Siti</em> = tanah, <em>hinggil</em> = tinggi. Teras berundak tempat Sultan menerima sembah rakyat. Ketinggian fisik sebagai simbol ketinggian derajat spiritual.</p>
+            <div class="arsitek-tag">Ritual · Hierarki</div>
+          </div>
+        </div>
+
+        <div class="arsitek-item reveal-up" style="--delay:0.45s">
+          <div class="arsitek-photo">
+            <img src="photos/taman sari.jpg" alt="Taman Sari" />
+            <span class="photo-placeholder">📷 Taman Sari</span>
+          </div>
+          <div class="arsitek-info">
+            <h4>Taman Sari</h4>
+            <p>Taman air keraton — mikrokosmos surga di bumi. Air sebagai elemen purifikasi dan kesuburan. Labirin ruangnya menyimbolkan perjalanan spiritual menuju pencerahan.</p>
+            <div class="arsitek-tag">Meditatif · Simbolik</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-number">03</div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       PERGESERAN RUANG
+  ═══════════════════════════════════════ -->
+  <section class="section pergeseran dark-section" id="pergeseran">
+    <div class="section-inner">
+      <div class="section-label light">04 — Pergeseran Ruang</div>
+      <h2 class="section-title light reveal-up">Transformasi & <em>Erosi Genius Loci</em></h2>
+
+      <p class="body-text light center reveal-up" style="max-width:680px; margin:0 auto 3rem;">
+        Modernisasi, pariwisata massal, dan perubahan sosial telah menggeser karakter ruang sakral keraton. Genius loci yang dulu terjaga kini menghadapi tantangan eksistensial.
+      </p>
+
+      <!-- TIMELINE -->
+      <div class="timeline">
+        <div class="timeline-item reveal-up" data-side="left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">1755</div>
+            <h4>Pendirian Keraton</h4>
+            <p>Sri Sultan Hamengku Buwono I mendirikan Keraton Yogyakarta. Setiap detail arsitektur dirancang sebagai manifestasi kosmologi Jawa.</p>
+            <!-- SLOT FOTO TIMELINE -->
+            <div class="timeline-photo"><img src="photos/1755.jpg" alt="1755" /><span class="photo-placeholder">📷 Foto Pendirian</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up" data-side="right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">1812</div>
+            <h4>Serangan Inggris (Geger Sepehi)</h4>
+            <p>Keraton dijarah oleh pasukan Raffles. Benda-benda pusaka hilang, struktur fisik rusak. Luka pertama pada genius loci keraton.</p>
+            <div class="timeline-photo"><img src="photos/1812.jpg" alt="1812" /><span class="photo-placeholder">📷 Foto Geger Sepehi</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up" data-side="left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">1945</div>
+            <h4>Integrasi ke Republik Indonesia</h4>
+            <p>Sri Sultan HB IX menyerahkan Yogyakarta kepada NKRI. Fungsi politik keraton berubah; ruang kekuasaan bertransformasi menjadi ruang kebudayaan.</p>
+            <div class="timeline-photo"><img src="photos/1985.jpg" alt="1945" /><span class="photo-placeholder">📷 Foto Integrasi</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up" data-side="right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">1970-an</div>
+            <h4>Pariwisata Massal Dimulai</h4>
+            <p>Keraton dibuka untuk wisatawan umum. Genius loci mulai terfragmentasi antara kebutuhan ritual dan komodifikasi budaya.</p>
+            <div class="timeline-photo"><img src="photos/1970.jpg" alt="1970" /><span class="photo-placeholder">📷 Foto Pariwisata</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up" data-side="left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2000-an</div>
+            <h4>Era Digital & Gentrifikasi</h4>
+            <p>Kawasan Malioboro dan sekitar keraton mengalami gentrifikasi. Pedagang lokal tergeser. Estetika ruang berubah demi selera wisatawan.</p>
+            <div class="timeline-photo"><img src="photos/2000.jpg" alt="2000an" /><span class="photo-placeholder">📷 Foto Era Digital</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up" data-side="right">
+          <div class="timeline-dot urgent"></div>
+          <div class="timeline-content urgent">
+            <div class="timeline-year">Kini</div>
+            <h4>Krisis Genius Loci?</h4>
+            <p>Tekanan dari berbagai arah mengancam keutuhan roh tempat. Pertanyaan mendesak: bagaimana menjaga genius loci di tengah arus modernisasi?</p>
+            <div class="timeline-photo"><img src="photos/kini.jpg" alt="Kini" /><span class="photo-placeholder">📷 Foto Kondisi Terkini</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERBANDINGAN BEFORE-AFTER -->
+      <div class="compare-section reveal-up">
+        <h3 class="compare-title">Pergeseran Fungsi Ruang</h3>
+        <div class="compare-table">
+          <div class="compare-header">
+            <span>Dahulu</span>
+            <span>Elemen Ruang</span>
+            <span>Kini</span>
+          </div>
+          <div class="compare-row">
+            <span class="then">Ritual & Sembah</span>
+            <span class="element">Alun-alun Utara</span>
+            <span class="now changed">Taman Wisata & Event</span>
+          </div>
+          <div class="compare-row">
+            <span class="then">Prosesi Kerajaan</span>
+            <span class="element">Jalan Malioboro</span>
+            <span class="now changed">Pusat Perbelanjaan</span>
+          </div>
+          <div class="compare-row">
+            <span class="then">Hunian Abdi Dalem</span>
+            <span class="element">Kawasan Baluwarti</span>
+            <span class="now changed">Permukiman & Homestay</span>
+          </div>
+          <div class="compare-row">
+            <span class="then">Meditasi Sultan</span>
+            <span class="element">Taman Sari</span>
+            <span class="now preserved">Wisata Budaya (terjaga)</span>
+          </div>
+          <div class="compare-row">
+            <span class="then">Penyimpanan Pusaka</span>
+            <span class="element">Kedhaton</span>
+            <span class="now preserved">Tetap Sakral (tertutup)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-number light">04</div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       GALERI FOTO
+  ═══════════════════════════════════════ -->
+  <section class="section galeri" id="galeri">
+    <div class="section-inner">
+      <div class="section-label">05 — Galeri</div>
+      <h2 class="section-title reveal-up"><em>Mata Memandang</em> Ruang Sakral</h2>
+      <p class="body-text center reveal-up" style="max-width:560px; margin: 0 auto 3rem;">
+        Koleksi visual yang merekam jiwa tempat Keraton Yogyakarta — dari sudut arsitektur, ritual, hingga kehidupan sehari-hari.
+      </p>
+
+      <!-- MASONRY GALLERY -->
+      <div class="gallery-grid">
+        <!-- SLOT FOTO 1 -->
+        <div class="gallery-item tall reveal-up" style="--delay:0s">
+          <img src="photos/kedhaton.JPG" alt="Galeri 1" />
+          <span class="photo-placeholder">📷 Foto 1 — Gerbang Keraton</span>
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Gerbang Keraton</span>
+          </div>
+        </div>
+        <!-- SLOT FOTO 2 -->
+        <div class="gallery-item reveal-up" style="--delay:0.1s">
+          <img src="photos/Abdi Dalem.jpeg" alt="Galeri 2" />
+          <span class="photo-placeholder">📷 Foto 2 — Abdi Dalem</span>
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Abdi Dalem dalam Tugas</span>
+          </div>
+        </div>
+        <!-- SLOT FOTO 3 -->
+        <div class="gallery-item reveal-up" style="--delay:0.2s">
+          <img src="photos/ukiran kayu.jpg" alt="Galeri 3" />
+          <span class="photo-placeholder">📷 Foto 3 — Ukiran Kayu</span>
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Detail Ukiran Kayu Jati</span>
+          </div>
+        </div>
+        <!-- SLOT FOTO 4 -->
+        <div class="gallery-item wide reveal-up" style="--delay:0.3s">
+          <img src="photos/panorama.jpg" alt="Galeri 4" />
+          <span class="photo-placeholder">📷 Foto 4 — Panorama Keraton</span>
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Panorama Kompleks Keraton</span>
+          </div>
+        </div>
+        <!-- SLOT FOTO 5 -->
+        <div class="gallery-item reveal-up" style="--delay:0.4s">
+          <img src="photos/ritual keraton.jpeg" alt="Galeri 5" />
+          <span class="photo-placeholder">📷 Foto 5 — Ritual Keraton</span>
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Upacara Adat Keraton</span>
+          </div>
+        </div>
+        <!-- SLOT FOTO 6 -->
+        <div class="gallery-item tall reveal-up" style="--delay:0.5s">
+          <img src="photos/taman sari.jpg" alt="Galeri 6" />
+          <span class="photo-placeholder">📷 Foto 6 — Taman Sari</span>
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Kolam Taman Sari</span>
+          </div>
+        </div>
+        <!-- SLOT FOTO 7 -->
+        <div class="gallery-item reveal-up" style="--delay:0.6s">
+          <img src="photos/alun alun.jpg" alt="Galeri 7" />
+          <span class="photo-placeholder">📷 Foto 7 — Alun-alun</span>
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Alun-alun Utara</span>
+          </div>
+        </div>
+        <!-- SLOT FOTO 8 -->
+        <div class="gallery-item reveal-up" style="--delay:0.7s">
+          <img src="photos/batik keraton.jpeg" alt="Galeri 8" />
+          <span class="photo-placeholder">📷 Foto 8 — Batik Keraton</span>
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Motif Batik Keraton</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-number">05</div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       PENUTUP / KESIMPULAN
+  ═══════════════════════════════════════ -->
+  <section class="section penutup" id="penutup">
+    <div class="penutup-bg">
+      <img src="photos/penutup-bg.jpg" alt="Penutup" class="penutup-img" />
+      <div class="hero-vignette"></div>
+    </div>
+    <div class="section-inner">
+      <div class="section-label light">06 — Penutup</div>
+      <h2 class="section-title light reveal-up"><em>Menjaga Roh</em> yang Tersisa</h2>
+      <div class="penutup-content">
+        <p class="body-text light large reveal-up">
+          Keraton Yogyakarta adalah bukti bahwa arsitektur bisa menjadi wadah jiwa — bahwa ruang fisik dapat menyimpan memori kolektif, nilai spiritual, dan identitas budaya sebuah bangsa.
+        </p>
+        <p class="body-text light reveal-up">
+          Dalam kerangka Norberg-Schulz, genius loci Keraton Yogyakarta adalah warisan yang rapuh. Ia bukan hanya tentang bangunan yang berdiri, tapi tentang <em>cara berdiam</em> di dalamnya — ritual yang dijalankan, hierarki yang dihormati, dan makna yang diwariskan dari generasi ke generasi.
+        </p>
+        <p class="body-text light reveal-up">
+          Tantangan terbesar kita bukan mempertahankan bangunannya, tapi mempertahankan <em>jiwa yang menghuni</em> bangunan itu.
+        </p>
+
+        <div class="closing-ornament reveal-up">
+          <div class="ornament-line"></div>
+          <div class="ornament-glyph">꧁ ꧂</div>
+          <div class="ornament-line"></div>
+        </div>
+
+        <div class="reference-box reveal-up">
+          <h4>Referensi Utama</h4>
+          <ul>
+            <li>Norberg-Schulz, C. (1979). <em>Genius Loci: Towards a Phenomenology of Architecture</em>. Rizzoli.</li>
+            <li>Norberg-Schulz, C. (1980). <em>Intentions in Architecture</em>. MIT Press.</li>
+            <li>Prijotomo, J. (2018). <em>Arsitektur Jawa dan Kosmologi</em>. ITS Press.</li>
+            <li>Dakung, S. (1981). <em>Arsitektur Tradisional Daerah Istimewa Yogyakarta</em>. Depdikbud.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section-number light">06</div>
+  </section>
+
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">꧁ Genius Loci · Keraton Yogyakarta ꧂</div>
+      <p class="footer-desc">Kajian Fenomenologi Arsitektur berdasarkan teori Christian Norberg-Schulz</p>
+      <div class="footer-ornament">
+        <span>✦</span><span>✦</span><span>✦</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ░░ LIGHTBOX ░░ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lb-close">✕</button>
+    <img class="lightbox-img" id="lb-img" src="" alt="" />
+    <div class="lightbox-caption" id="lb-caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
